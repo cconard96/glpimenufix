@@ -20,7 +20,7 @@
  --------------------------------------------------------------------------
  */
 
-define('PLUGIN_MENUFIX_VERSION', '2.1.0');
+define('PLUGIN_MENUFIX_VERSION', '1.0.0');
 define('PLUGIN_MENUFIX_MIN_GLPI', '9.5.0');
 define('PLUGIN_MENUFIX_MAX_GLPI', '9.6.0');
 
