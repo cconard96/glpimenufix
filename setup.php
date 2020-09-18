@@ -20,7 +20,7 @@
  --------------------------------------------------------------------------
  */
 
-define('PLUGIN_MENUFIX_VERSION', '1.0.0');
+define('PLUGIN_MENUFIX_VERSION', '1.0.1');
 define('PLUGIN_MENUFIX_MIN_GLPI', '9.5.0');
 define('PLUGIN_MENUFIX_MAX_GLPI', '9.6.0');
 
@@ -28,8 +28,6 @@ function plugin_init_menufix() {
    global $PLUGIN_HOOKS;
 
    $PLUGIN_HOOKS['csrf_compliant']['menufix'] = true;
-
-   $_SESSION['glpimenu']['assets']['default'] = Computer::getSearchURL();
    $PLUGIN_HOOKS['redefine_menus']['menufix'] = 'plugin_menufix_redefine_menus';
 }
 
